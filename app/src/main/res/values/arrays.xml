@@ -5,6 +5,11 @@
         <item>FragmentReuseActivity</item>
         <item>FragmentManagerActivity</item>
         <item>FragmentToActivity</item>
+        <item>FragToFragActivity</item>
+        <item>ListFragmentActivity</item>
+        <item>DividFragmentActivity</item>
+        <item>WebViewFragmentActivity</item>
+        <item>QuestionActivity</item>
     </string-array>
 
     <string-array name="titles">
@@ -12,5 +17,27 @@
         <item>프래그먼트 재사용</item>
         <item>프래그먼트 편집(추가, 교체, 삭제, 숨기기)</item>
         <item>액티비티에서 프래그먼트로 인수 전달</item>
+        <item>프래그먼트간 인수 전달</item>
+        <item>리스트 프래그먼트</item>
+        <item>프래그먼트를 이용한 화면분할</item>
+        <item>웹뷰 프래그먼트</item>
+        <item>대화상자 활용</item>
     </string-array>
+
+    <string-array name="word">
+        <item>boy</item>
+        <item>girl</item>
+        <item>school</item>
+        <item>hello</item>
+        <item>go</item>
+    </string-array>
+
+    <string-array name="word_desc">
+        <item>소년. 남자(사내) 아이. 어머나, 맙소사(놀람, 기쁨, 아픔 등을 나타내는 소리)</item>
+        <item>소녀. 여자(계집) 아이. 여자친구.</item>
+        <item>학교(주로 초, 중, 고등학교). 교습소. 훈련소. 훈련시키다. 단련시키다. 교육하다.</item>
+        <item>안녕하세요. 여보세요. Say hello to : ~에게 안부를 전하다.</item>
+        <item>가다. 나아가다(move along). go for walk : 산책하러 가다.</item>
+    </string-array>
+
 </resources>

@@ -19,7 +19,12 @@
         <activity android:name=".FragmentLifeCycleActivity" />
         <activity android:name=".FragmentReuseActivity" />
         <activity android:name=".FragmentManagerActivity" />
-        <activity android:name=".FragmentToActivity"></activity>
+        <activity android:name=".FragmentToActivity" />
+        <activity android:name=".FragToFragActivity" />
+        <activity android:name=".ListFragmentActivity" />
+        <activity android:name=".DividFragmentActivity" />
+        <activity android:name=".WebViewFragmentActivity" />
+        <activity android:name=".QuestionActivity"></activity>
     </application>
 
 </manifest>
