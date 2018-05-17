@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activities">
+        <item>FragmentLifeCycleActivity</item>
+        <item>FragmentReuseActivity</item>
+        <item>FragmentManagerActivity</item>
+        <item>FragmentToActivity</item>
+    </string-array>
+
+    <string-array name="titles">
+        <item>액티비티 와 프래그먼트 생명주기</item>
+        <item>프래그먼트 재사용</item>
+        <item>프래그먼트 편집(추가, 교체, 삭제, 숨기기)</item>
+        <item>액티비티에서 프래그먼트로 인수 전달</item>
+    </string-array>
+</resources>
