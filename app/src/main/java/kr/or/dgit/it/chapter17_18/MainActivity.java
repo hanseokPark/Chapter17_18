@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import kr.or.dgit.it.chapter17_18.R;
+
 public class MainActivity extends AppCompatActivity {
     private String[] titles;
     private String[] activities;

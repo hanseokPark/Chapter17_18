@@ -19,5 +19,4 @@ public class WebFragment extends WebViewFragment {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("http://www.google.com");
     }
-
 }

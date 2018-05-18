@@ -11,6 +11,6 @@ public class WebViewFragmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_view_fragment);
 
         WebFragment webfg = new WebFragment();
-        getFragmentManager().beginTransaction().add(R.id.frame, webfg);
+        getFragmentManager().beginTransaction().add(R.id.frame, webfg).commit();
     }
 }
