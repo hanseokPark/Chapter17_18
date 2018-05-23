@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crad_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    crad_view:cardBackgroundColor="#81c784"
+    crad_view:cardCornerRadius="12dp"
+    crad_view:cardElevation="3dp"
+    crad_view:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/item_image"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/android_image_1"/>
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image"
+            android:textSize="30sp"
+            android:text="Chaper One"/>
+        <TextView
+            android:id="@+id/item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_image"
+            android:layout_below="@+id/item_title"
+            android:text="sub title Chapter ONe"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
