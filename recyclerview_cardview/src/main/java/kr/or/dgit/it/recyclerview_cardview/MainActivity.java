@@ -3,7 +3,12 @@ package kr.or.dgit.it.recyclerview_cardview;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,6 +22,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -24,12 +30,45 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
 
+    private ActionBarDrawerToggle toggle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        final DrawerLayout drawerLayout = findViewById(R.id.main_drawer);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toggle.syncState();
+
+        NavigationView navigationView = findViewById(R.id.main_drawer_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                int id = item.getItemId();
+                if(id==R.id.menu_drawer_home){
+                    showToast("NavigationDrawer...home..");
+                }else if(id==R.id.menu_drawer_message){
+                    showToast("NavigationDrawer...message..");
+                }else if(id==R.id.menu_drawer_add){
+                    showToast("NavigationDrawer...add..");
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return false;
+
+            }
+
+        });
+
+
 
         //원본
         Item[] items = {
@@ -61,8 +100,20 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(toggle.onOptionsItemSelected(item)){
+            return false;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    private void showToast(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
 
     private class RecyclerAdapter extends RecyclerView.Adapter {
         Item[] items;
