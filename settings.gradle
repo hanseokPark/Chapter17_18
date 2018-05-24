@@ -1,1 +1,1 @@
-include ':app', ':viewpager_application', ':materialdesignapplication', ':recyclerview_cardview'
+include ':app', ':viewpager_application', ':materialdesignapplication', ':recyclerview_cardview', ':appbar_application', ':bottom_sheet'

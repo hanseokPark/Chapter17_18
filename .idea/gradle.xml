@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbar_application" />
+            <option value="$PROJECT_DIR$/bottom_sheet" />
             <option value="$PROJECT_DIR$/materialdesignapplication" />
             <option value="$PROJECT_DIR$/recyclerview_cardview" />
             <option value="$PROJECT_DIR$/viewpager_application" />
