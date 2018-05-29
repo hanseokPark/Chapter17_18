@@ -94,6 +94,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else if(id == R.id.menu_drawer_add){
             tabLayout.getTabAt(2).select();
         }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main_drawer);
+        drawer.closeDrawer(GravityCompat.START);
+
         return false;
     }
 
