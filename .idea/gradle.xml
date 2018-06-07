@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/appbar_application" />
             <option value="$PROJECT_DIR$/bottom_sheet" />
             <option value="$PROJECT_DIR$/broadcast" />
+            <option value="$PROJECT_DIR$/intentservice" />
             <option value="$PROJECT_DIR$/materialdesignapplication" />
             <option value="$PROJECT_DIR$/notification" />
             <option value="$PROJECT_DIR$/part06_application" />
@@ -19,6 +20,7 @@
             <option value="$PROJECT_DIR$/part6_application" />
             <option value="$PROJECT_DIR$/part6application" />
             <option value="$PROJECT_DIR$/recyclerview_cardview" />
+            <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/viewpager_application" />
           </set>
         </option>
